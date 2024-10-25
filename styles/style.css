@@ -11,13 +11,15 @@
 .header__menu {
   /*dont know yet*/
   background-color: pink;
-  margin: auto;
+  margin: auto 0;
 }
 .header__links-list {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
   background-color: purple;
+  gap: 28px;
 }
 .header__links-list {
   list-style: circle;
@@ -30,6 +32,8 @@
   color: #000;
   font-weight: normal;
   font-size: 18px;
+  padding-left: 0.5ch;
+  letter-spacing: 0;
   line-height: auto;
   text-wrap: nowrap
 }
@@ -51,11 +55,73 @@
   font-weight: normal;
   line-height: 24.3px;
   font-style: normal;
-}
-.address a{
   text-decoration: none;
   border-bottom: 1px solid;
 }
 .header__address {
   margin: auto;
+}
+
+/*Cover general*/
+.cover {
+  padding: 165px 50px 51px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  min-height: 100px;
+}
+/*Lots general*/
+.lots {
+  padding: 179px 24px 73px;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.lots__heading {
+  padding: 0 891px 27px 40px;
+}
+.lots__card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  list-style: none;
+}
+.card {
+  width: 334px;
+  height: 563px;
+}
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.card_type_picture{
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.lots__look-more-link {
+  padding: 30px 820px 10px 40px;
+}
+/*About general*/
+.about {
+  padding: 73px 24px 180px;
+  background-color: green;
+}
+
+/*Footer general*/
+.footer {
+  padding: 0px 50px 88px;
+  background-color: beige
 }
