@@ -2,26 +2,25 @@
 
 /*Header general*/
 .header {
-  padding: 92px 24px 96px;
+  margin: 92px 24px 96px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   background-color: yellow;
+  height: 105px;
 }
 /*Header list*/
 .header__menu {
-  /*dont know yet*/
   background-color: pink;
-  margin: auto 0;
+  padding-right: 22px;
+  padding-top: 44px;
+  
 }
 .header__links-list {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   background-color: purple;
   gap: 28px;
-}
-.header__links-list {
   list-style: circle;
 }
 .header__links-list-item_no-bullit {
@@ -29,6 +28,7 @@
 }
 .header__link {
   text-decoration: underline;
+  text-underline-offset: 0.3em;
   color: #000;
   font-weight: normal;
   font-size: 18px;
@@ -40,10 +40,11 @@
 .header__link_active {
   text-decoration: none;
 }
+
 /*Header logo*/
 .header__logo {
   display: block;
-  width: 148px;
+  width: 140px;
 }
 .header__logo-image {
   width: 100%;
@@ -56,10 +57,10 @@
   line-height: 24.3px;
   font-style: normal;
   text-decoration: none;
-  border-bottom: 1px solid;
+  text-underline-offset: 0.3em;
 }
 .header__address {
-  margin: auto;
+  padding: 5px 25px 3px 184px;
 }
 
 /*Cover general*/
@@ -68,8 +69,9 @@
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto;
-  min-height: 100px;
+  background-size: cover;
+  width: auto;
+  height: 757px;
 }
 /*Lots general*/
 .lots {
@@ -105,7 +107,7 @@
   background-position: center center;
   background-size: cover;
 }
-.card_type_picture{
+.card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
   background-repeat: no-repeat;
   background-position: center center;
