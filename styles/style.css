@@ -11,7 +11,7 @@
 /*Header list*/
 .header__menu {
   padding-top: 44px;
-  padding-right: 22px;
+  padding-right: 15px;
   background-color: pink;
   
 }
@@ -34,7 +34,7 @@
   line-height: auto;
   letter-spacing: 0;
   text-decoration: underline;
-  text-underline-offset: 0.3em;
+  text-underline-offset: 0.225em;
   text-wrap: nowrap;
 }
 .header__link_active {
@@ -44,10 +44,12 @@
 /*Header logo*/
 .header__logo {
   display: block;
-  width: 140px;
+  width: 137px;
+  margin: auto;
 }
 .header__logo-image {
   width: 100%;
+
 }
 /*Header address*/
 .address {
@@ -57,10 +59,10 @@
   font-style: normal;
   line-height: 24.3px;
   text-decoration: none;
-  text-underline-offset: 0.3em;
+  text-underline-offset: 0.225em;
 }
 .header__address {
-  padding: 5px 25px 3px 184px;
+  padding: 6px 22px 2px 187px;
 }
 
 
@@ -149,16 +151,33 @@
 }
 .lots__heading {
   padding: 0 891px 27px 40px;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  
 }
 .lots__card-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   gap: 25px;
   list-style: none;
 }
-.card {
+.lots__card-list-item {
   width: 334px;
   height: 563px;
+}
+.card-link {
+  position: relative;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
@@ -179,9 +198,36 @@
   background-position: center center;
   background-size: cover;
 }
+.card__title {
+  position: relative;
+  padding-top: 51px;
+  padding-right: 40px;
+  padding-left: 40px; 
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-transform: uppercase;
+}
+.card__text {
+  position: relative;
+  padding-right: 40px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+}
 .lots__look-more-link {
   padding: 30px 820px 10px 40px;
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-offset: 0.225em;
 }
+
+
 /*About general*/
 .about {
   padding: 73px 24px 180px;
