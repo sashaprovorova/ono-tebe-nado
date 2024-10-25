@@ -2,40 +2,40 @@
 
 /*Header general*/
 .header {
-  margin: 92px 24px 96px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  background-color: yellow;
   height: 105px;
+  margin: 92px 24px 96px;
+  background-color: yellow;
 }
 /*Header list*/
 .header__menu {
-  background-color: pink;
-  padding-right: 22px;
   padding-top: 44px;
+  padding-right: 22px;
+  background-color: pink;
   
 }
 .header__links-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: purple;
   gap: 28px;
   list-style: circle;
+  background-color: purple;
 }
 .header__links-list-item_no-bullit {
   list-style: none;
 }
 .header__link {
-  text-decoration: underline;
-  text-underline-offset: 0.3em;
+  padding-left: 0.5ch;
   color: #000;
   font-weight: normal;
   font-size: 18px;
-  padding-left: 0.5ch;
-  letter-spacing: 0;
   line-height: auto;
-  text-wrap: nowrap
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-wrap: nowrap;
 }
 .header__link_active {
   text-decoration: none;
@@ -51,11 +51,11 @@
 }
 /*Header address*/
 .address {
-  font-size: 18px;
   color: #000;
   font-weight: normal;
-  line-height: 24.3px;
+  font-size: 18px;
   font-style: normal;
+  line-height: 24.3px;
   text-decoration: none;
   text-underline-offset: 0.3em;
 }
@@ -63,23 +63,89 @@
   padding: 5px 25px 3px 184px;
 }
 
+
+
 /*Cover general*/
 .cover {
-  padding: 165px 50px 51px;
+  position: relative;
+  width: auto;
+  height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  width: auto;
-  height: 757px;
 }
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  background: #000;
+}
+.cover__title {
+  position: relative;
+  margin-bottom: 135px;
+  padding-top: 165px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.aligned-text {
+  display: block;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.aligned-text_center {
+  line-height: 1;
+  text-align: center;
+}
+.aligned-text_right {
+  line-height: 1;
+  text-align: right;
+}
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 79px;
+}
+.cover__description-text {
+  padding-top: 12px;
+  padding-left: 78px;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 0.83em;
+}
+.bet-button {
+  width: 256px;
+  height: 51px;
+  border: 1px solid #fff;
+  padding: 12px 32px 11px 31px;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
 /*Lots general*/
 .lots {
-  padding: 179px 24px 73px;
-  background-color: pink;
   display: flex;
   flex-direction: column;
   justify-content: start;
+  padding: 179px 24px 73px;
+  background-color: pink;
 }
 .lots__heading {
   padding: 0 891px 27px 40px;
@@ -125,5 +191,5 @@
 /*Footer general*/
 .footer {
   padding: 0px 50px 88px;
-  background-color: beige
+  background-color: beige;
 }
