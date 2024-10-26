@@ -52,7 +52,6 @@
 
 .header__logo-image {
   width: 100%;
-
 }
 
 /*Header address*/
@@ -70,8 +69,6 @@
 .header__address {
   padding: 6px 22px 2px 187px;
 }
-
-
 
 /*Cover general*/
 
@@ -159,6 +156,7 @@
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /*Lots general*/
@@ -175,7 +173,6 @@
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
-  
 }
 
 /*Cards*/
@@ -205,28 +202,21 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 .card__title {
@@ -269,10 +259,6 @@
   padding: 73px 24px 94px;
 }
 
-.about__column {
-  min-height: 595px;
-}
-
 /*About left side*/
 
 .about__logo {
@@ -282,7 +268,7 @@
   height: 240px;
   margin-top: 25px;
   margin-left: 47px;
-  border-radius: 120px;
+  border-radius: 50%;
   background-color: #000;
 }
 
@@ -294,11 +280,12 @@
 
 /*About right side*/
 
-.about__column__text {
+.about__column {
   display: flex;
   flex-direction: column;
   justify-content: end;
   gap: 24px;
+  min-height: 595px;
   padding-bottom: 10px;
   padding-left: 8px;
 }
@@ -314,22 +301,6 @@
   padding-right: 2px;
   font-size: 20px;
   line-height: 24px;
-}
-
-.spacing__one {
-  word-spacing: 1px;
-}
-
-.spacing__three {
-  word-spacing: 3px;
-}
-
-.spacing__two {
-  word-spacing: 2px;
-}
-
-.spacing__four {
-  word-spacing: 4px;
 }
 
 /*Footer general*/
@@ -378,9 +349,11 @@
 .footer__social-list {
   display: flex;
   flex-direction:row;
+  flex-wrap: wrap;
   align-items: center;
   gap: 48px;
 }
+
 .footer__social-list-item {
   width: 48px;
   height: 48px;
