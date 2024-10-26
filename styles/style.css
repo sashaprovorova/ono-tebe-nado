@@ -228,8 +228,7 @@
 .card__title {
   position: relative;
   padding-top: 51px;
-  padding-right: 40px;
-  padding-left: 40px; 
+  padding-inline: 40px;
   color: #fff;
   font-weight: bold;
   font-size: 22px;
